@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <div>
+        <form method="post">
+            <input type="text" name="text" placeholder="Привет, Максим!"/>
+             <input type="text" name="tag" placeholder="Tэг (ты знал что это тут будет):)">
+            <button type="Плиз кам!">Добавить</button>
+        </form>
+    </div>
+
+
+    <div>Список читателей</div>
+    {{#messages}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{text}}</span>
+        <i>{{tag}}</i>
+    </div>
+    {{/messages}}
+</body>
+</html>
